@@ -31,11 +31,14 @@ let winningSum = 1
 
     let numberOfWins = 0
 
+    // iterate over all the possible times
     for (let holdTime = 0; holdTime < value.time + 1; holdTime++) {
         
+        // calculate the remaining time after holding the button
         let raceTime = value.time - holdTime 
         let distanceTraveled = holdTime * raceTime
         
+        // calculate the distance travelled in the remaining time
         if (distanceTraveled > value.distance){
             numberOfWins += 1
         }
@@ -56,12 +59,14 @@ function challengeOne() {
 
 function challengeTwo() {
     
-
+    // create strings out of the first and second line
     let lineOne = inputFile[0].split(':')[1].split(' ').join('')
     let lineTwo = inputFile[1].split(':')[1].split(' ').join('')
 
+    // build the race object
     let races = [{id: 0, time: lineOne, distance: lineTwo}]
     
+    // geerate the possible results of the race
     return generatePossibleResults(races)
 
 }
