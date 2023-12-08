@@ -83,4 +83,4 @@ let c2 = challengeTwo(); // 60294664
 const end = performance.now();
 const duration = end - start;
 console.log(duration / 1000, 'S')
-console.log("Day 3 - Challenge 1: ", c1, "Challenge 2: ", c2);
+console.log("Day 5 - Challenge 1: ", c1, "Challenge 2: ", c2);

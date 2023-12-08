@@ -74,4 +74,4 @@ function challengeTwo() {
 let c1 = challengeOne();
 let c2 = challengeTwo();
 
-console.log("Day 3 - Challenge 1: ", c1, "Challenge 2: ", c2);
+console.log("Day 6 - Challenge 1: ", c1, "Challenge 2: ", c2);
